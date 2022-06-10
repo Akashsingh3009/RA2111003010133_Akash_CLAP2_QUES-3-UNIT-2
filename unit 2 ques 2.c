@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main() {
-  int n,k=1;
+  int n,k=1,d;
   printf("enter n\n");
   scanf("%d",&n);
   while(n>0)
     {
-      if(n%10==0)
+    d=n%10;
+      if(d==0)
         k=0;
       n/=10;
     }
